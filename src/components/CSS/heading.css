@@ -1,0 +1,46 @@
+.topnav {
+    overflow: hidden;
+    /* position: fixed; */
+    top: 0;
+    margin: 0;
+    text-align: center;
+    background-color:white;
+    
+  }
+  
+  .topnav a {
+    float:right;
+    color: black;
+    text-align: center;
+    padding: 15px 20px;
+    font-size: 17px;
+  }
+  .topnav a:nth-child(1){
+      background-color: rgb(250, 41, 128);
+      color: white;
+  }
+  .topnav a:nth-child(5){
+      /* background-color: rgb(250, 41, 128); */
+      font-size: 20px;
+      font-family:'Times New Roman', Times, serif;
+      letter-spacing: 2.5px;
+  }
+  .topnav a span{
+      font-weight: bolder;
+  }
+  @media (max-width:1300px) {
+      .topnav a{
+          display: none;
+      }
+      .topnav a:nth-child(5){
+          display: block;
+      }
+      .topnav{
+          text-align: center;
+      }
+      .topnav a{
+          float: none;
+      }
+  }
+  
+  

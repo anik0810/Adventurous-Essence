@@ -1,0 +1,43 @@
+.head{
+  margin-top: 3rem;
+	text-align: center;
+}
+.head h3{
+  color: rgb(248, 86, 113);
+	font-family: "Merriweather",serif;
+	font-style: italic;
+	font-weight: 500;
+}
+
+.head p{
+  font-family: cursive;
+	color: rgb(115, 116, 116);
+}
+
+.service{
+  padding: 3rem;
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  background-image: url('./IMAGE/Picsart_22-05-26_12-44-10-700.jpg');
+  background-position: center;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.inner1{
+  grid-column-start: 1;
+  grid-column-start: 2;
+}
+.inner2{
+  grid-column-start: 2;
+  grid-column-start: 3;
+}
+.inner-service{
+  padding: 1rem;
+  font-family: "Merriweather",serif;
+  font-style: italic;
+  font-size: 1.2rem;
+  color: white;
+  font-weight: 500;
+}

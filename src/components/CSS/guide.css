@@ -1,0 +1,70 @@
+.guide{
+    margin-top:4rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 1rem;
+    background-color: #e5f5fc;
+    padding: 2rem;
+}
+.left{
+    padding: 1rem;
+    padding-left: 2rem;
+}
+
+.left h{
+    font-size: 1.8rem;
+    font-family: "Merriweather",serif;
+    font-style: italic;
+    line-height: 1.4;
+    color: #343434;
+}
+.left p{
+    font-size: 18px;
+    margin-top: 1.2rem;
+    color: #555353;
+}
+
+.contact{
+    display: inline-flex;
+    flex-direction: row;
+    column-gap: 2rem;
+    margin-top: 0.8rem;
+}
+.contact p1{
+    font-size: 17px;
+    margin-top: 8px;
+    font-weight: bolder;
+}
+.enquiery{
+    border: none;
+    padding: 8px 15px;
+    font-size: 17px;
+    font-family: "Merriweather",serif;
+    font-style: italic;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(89, 138, 245);
+    border-radius: 5px;
+}
+
+.right{
+    padding: 1rem;
+    text-align: center;
+    display: inline-flex;
+    flex-direction: row;
+}
+.expert{
+    padding: 1rem;
+}
+.expert img{
+    width: 9.6rem;
+    height: 9.6rem;
+    border-radius: 50%;
+    cursor:pointer;
+    margin-bottom: 1rem;
+}
+.expert h{
+    font-size: 18px;
+    font-weight: 550;
+    color: #555353;
+}
