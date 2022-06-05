@@ -15,13 +15,13 @@ export default function Service() {
                 <div className="inner-service"><FontAwesomeIcon icon={faStar} style={{marginRight:"10px"}}/>Railway Ticket Bookings</div>
                 <div className="inner-service"><FontAwesomeIcon icon={faStar} style={{marginRight:"10px"}}/>Hotel Bookings</div>
                 <div className="inner-service"><FontAwesomeIcon icon={faStar} style={{marginRight:"10px"}}/>Car Rentals</div>
-                <div className='inner-service'><FontAwesomeIcon icon={faStar} style={{marginRight:"10px"}}/>Flight Booking (Domestic & International)</div>
+                <div className='inner-service'><FontAwesomeIcon icon={faStar} style={{marginRight:"10px"}}/>Flight Booking</div>
           </div>
           <div className='inner2'>
-              <div className='inner-service'><FontAwesomeIcon icon={faStar} style={{marginRight:"10px"}}/>Visa Endorsement</div>
               <div className='inner-service'><FontAwesomeIcon icon={faStar} style={{marginRight:"10px"}}/>PassPort & Visa Assitance</div>
-              <div className='inner-service'><FontAwesomeIcon icon={faStar} style={{marginRight:"10px"}}/>Online Tour Packages Booking</div>
+              <div className='inner-service'><FontAwesomeIcon icon={faStar} style={{marginRight:"10px"}}/>Visa Endorsement</div>
               <div className='inner-service'><FontAwesomeIcon icon={faStar} style={{marginRight:"10px"}}/>EMI Availaible</div>
+              <div className='inner-service'><FontAwesomeIcon icon={faStar} style={{marginRight:"10px"}}/>Online Tour Packages Booking</div>
             </div>
         </div>
     </>

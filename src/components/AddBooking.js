@@ -13,10 +13,8 @@ export default function AddBooking() {
         dates:date,
         days:days,
         fare:fare
-    }).then(()=>{
-        alert("Inserted !");
-    });
-    // console.log("hello");
+    })
+        alert(`insertion of ${place} is successfull !!`);
     };
   return (
     <>
@@ -37,7 +35,9 @@ export default function AddBooking() {
                 <label for="exampleFormControlInput1" class="form-label">Fare</label>
                 <input type="number" class="form-control" id="exampleFormControlInput1" onChange={(event)=>{setFare(event.target.value)}} />
             </div>
-            <button class="btn btn-primary me-md-2" type="button" onClick={addPackage}>Add</button>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button class="btn btn-danger me-md-2" type="button" onClick={addPackage}>Add</button>
+            </div>
         </div>
     </>
   )

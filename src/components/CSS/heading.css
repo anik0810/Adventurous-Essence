@@ -1,8 +1,6 @@
 .topnav {
     overflow: hidden;
     /* position: fixed; */
-    top: 0;
-    margin: 0;
     text-align: center;
     background-color:white;
     
@@ -16,7 +14,7 @@
     font-size: 17px;
   }
   .topnav a:nth-child(1){
-      background-color: rgb(250, 41, 128);
+      background-color: rgb(22, 65, 255);
       color: white;
   }
   .topnav a:nth-child(5){

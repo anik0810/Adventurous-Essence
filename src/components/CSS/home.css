@@ -1,9 +1,10 @@
 .main-heading{
 	margin-top: 3rem;
 	text-align: center;
+	padding:1rem;
 }
 .main-heading h3{
-	color: rgb(248, 86, 113);
+	color: rgb(16, 32, 250);
 	font-family: "Merriweather",serif;
 	font-style: italic;
 	font-weight: 500;
@@ -17,16 +18,45 @@
 .main-class{
 	display: grid;
 	padding:1rem;
-	grid-template-columns: repeat(3,1fr);
+	grid-template-columns: repeat(1,1fr);
 	column-gap: 35px;
-	padding-left: 3.5rem;
-	padding-right: 3.5rem;
+	row-gap: 3rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
 	margin-top: 2rem;
 }
+@media (min-width:700px) and (max-width:1000px) {
+	.main-class{
+		grid-template-columns: repeat(2,1fr);
+	}
+	.inner-class:nth-child(1){
+		display: none;
+	}
+	.inner-class:nth-child(2){
+		grid-column-start: 0;
+		grid-column-end: 1;
+	}
+	.inner-class:nth-child(3){
+		grid-column-start: 1;
+		grid-column-end: 2;
+	}
+}
+@media (min-width:1000px){
+	.main-class{
+		grid-template-columns: repeat(3,1fr);
+		padding-left: 3rem;
+		padding-right: 3rem;
+	}
+}
+@media (max-width:600px) {
+	.main-heading span{
+		display: none;
+	}
+}
 .inner-class{
-	background-color: rgb(243, 238, 214);
+	background-color: rgb(253, 253, 235);
 	cursor: pointer;
-	/* border-radius: 10px; */
+	border-radius: 10px;
 }
 .inner-class:hover{
 	box-shadow: 0 0 20px rgb(170, 169, 169);
@@ -40,7 +70,7 @@
 .inner-class h{
 	font-size: 22px;
 	font-weight: 450;
-	color: rgb(255, 88, 116);
+	color: rgb(7, 18, 173);
 }
 .inner-class p{
 	margin-top:8px;
@@ -50,13 +80,13 @@
 .event{
 	border: none;
 	background-color: transparent;
-	color: rgb(255, 58, 91);
+	color: rgb(42, 98, 253);
 }
 
 .all{
 	margin-top: 2rem;
 	padding: 8px 15px;
-	background-color: rgb(250, 56, 88);
+	background-color: rgb(73, 32, 255);
 	color: white;
 	font-weight: 500;
 	border: none;

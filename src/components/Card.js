@@ -5,17 +5,18 @@ import him from './CSS/IMAGE/him.jpg';
 import sea from './CSS/IMAGE/sea.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
+import {Link} from 'react-router-dom';
 export default function Card() {
     let imgStyle={
         width:"100%",
-        // borderTopLeftRadius:"10px", 
-        // borderTopRightRadius:"10px" 
+        borderTopLeftRadius:"10px", 
+        borderTopRightRadius:"10px" 
     }
   return (
       <>
       <div className=' main-heading'>
           <h3>Our Tours</h3>
-          <p>Browse our Destinations to start planning your next Adventure.<br/>We arrange trips to more than 80 destinations throughout the world and across each continent.</p>
+          <p><span>Browse our Destinations to start planning your next Adventure.<br/></span>We arrange trips to more than 80 destinations throughout the world and across each continent.</p>
       </div>
     <div className='main-class'>
         <div className='inner-class' id='try'>
@@ -45,7 +46,7 @@ export default function Card() {
         </div>
     </div>
         <div style={{textAlign:"center"}}>
-            <button className='all'>View All Destinations<FontAwesomeIcon icon={faArrowRight} style={{marginLeft:"10px",fontSize:"17px"}}/></button>
+            <Link to="/tour"><button className='all'>View All Destinations<FontAwesomeIcon icon={faArrowRight} style={{marginLeft:"10px",fontSize:"17px"}}/></button></Link>
         </div>
     </>
   )

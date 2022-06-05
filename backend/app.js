@@ -25,6 +25,12 @@ app.post("/add",(req,res)=>{
 });
 // const sql=`create table tours(place varchar,dates varchar,days number,fare number)`;
 
+app.get("/tour",(req,res)=>{
+    db.all(`select * from tours`,(err,result)=>{
+        if(err) return console.log(err.message);
+        res.send(result);
+    })
+})
 
 
 const PORT = 3001;

@@ -3,7 +3,7 @@
 	text-align: center;
 }
 .head h3{
-  color: rgb(248, 86, 113);
+  color: rgb(35, 19, 252);
 	font-family: "Merriweather",serif;
 	font-style: italic;
 	font-weight: 500;
@@ -18,20 +18,34 @@
   padding: 3rem;
   margin-top: 2rem;
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(2,1fr);
   background-image: url('./IMAGE/Picsart_22-05-26_12-44-10-700.jpg');
   background-position: center;
   background-size:cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-.inner1{
-  grid-column-start: 1;
-  grid-column-start: 2;
+
+@media (max-width:820px) {
+  .service{
+    padding: 1.2rem;
+  }
+  .inner-service{
+    text-align: center;
+  }
 }
-.inner2{
-  grid-column-start: 2;
-  grid-column-start: 3;
+@media (min-width:1000px) {
+  .service{
+    grid-template-columns: repeat(4,1fr);
+  }
+  .inner1{
+    grid-column-start: 1;
+    grid-column-start: 2;
+  }
+  .inner2{
+    grid-column-start: 2;
+    grid-column-start: 3;
+  }
 }
 .inner-service{
   padding: 1rem;

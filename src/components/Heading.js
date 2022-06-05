@@ -6,7 +6,7 @@ import logo from './CSS/IMAGE/logo.svg';
 export default function Navbar() {
   return (
     <>
-      <div class="topnav">
+      <div class="topnav ">
         {/* <button type="button" class="btn btn-primary">Mail Us</button> */}
         <a>Mail Us</a>
         <a>Call Us <span> </span> <span>📞+91 9903074062 </span><span> </span> or </a>

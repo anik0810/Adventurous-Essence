@@ -5,7 +5,7 @@ export default function Navbar() {
     // eslint-disable-next-line no-lone-blocks
     {
     let changeStyle={ 
-        backgroundColor:"#fdf4d6",
+        backgroundColor:"#fdf4d6"
     }
     let moto={
         fontFamily:"Merriweather",
@@ -25,7 +25,7 @@ export default function Navbar() {
   return (
     <>
             
-            <nav className="navbar navbar-expand-lg navbar-light" style={changeStyle}>
+            <nav className="navbar navbar-expand-lg navbar-light " style={changeStyle}>
             <div className="container-fluid d-flex" >
                 <a className="navbar-brand px-2" href="#" style={moto}>You Dream It.<div style={spanStyle}>We Plan It.</div></a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
