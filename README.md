@@ -1,5 +1,6 @@
-# SNU Alumni Webpage
-## Made with :heart: by Department of Computer Science & Engineering
-<br>
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSI7R0zxZ4mj8MrQeT2-6kpU7w4SjydR3Pudg&usqp=CAU">
+<h2 style="text-align:center">Adventurous Essence</h2>
+<p style="text-align:center">It is the main website of the tourist company</p>
+<p style="text-align:center">It is made with 💖 by Anik Dutta</p>
+<p2 style="text-align:center">This is made with React,Node,sqlite3 and it has payment features</p2>
+
 
