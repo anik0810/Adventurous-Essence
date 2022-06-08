@@ -7,7 +7,7 @@ export default function Navbar() {
     let changeStyle={ 
         backgroundColor:"#fdf4d6"
     }
-    let mohref={
+    let moto={
         fontFamily:"Merriweather",
         fontSize:"1.2rem",
         color:"rgb(248, 86, 113)",
