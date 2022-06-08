@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+// import { a } from 'react-router-dom';
 
 export default function Navbar() {
     // eslint-disable-next-line no-lone-blocks
@@ -7,7 +7,7 @@ export default function Navbar() {
     let changeStyle={ 
         backgroundColor:"#fdf4d6"
     }
-    let moto={
+    let mohref={
         fontFamily:"Merriweather",
         fontSize:"1.2rem",
         color:"rgb(248, 86, 113)",
@@ -34,27 +34,27 @@ export default function Navbar() {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent" style={{ }}>
                 <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li className="nav-item"style={{paddingRight:"1rem"}}>
-                        <Link className="nav-link active" aria-current="page" to="/">HOME</Link>
+                        <a className="nav-a active" aria-current="page" href="/">HOME</a>
                     </li>
                     <li className="nav-item"style={{paddingRight:"1rem"}}>
-                        <Link className="nav-link active" aria-current="page" to="/booking">BOOKINGS</Link>
+                        <a className="nav-a active" aria-current="page" href="/booking">BOOKINGS</a>
                     </li>
                     <li className="nav-item dropdown"style={{paddingRight:"1rem"}}>
-                        <a className="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a className="nav-a dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         SERVICES
                     </a>
                     <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><Link className="dropdown-item" to="/contact">Railway Ticket</Link></li>
-                        <li><Link className="dropdown-item" to="/contact">Flight Ticket</Link></li>
-                        <li><Link className="dropdown-item" to="/contact">About Visa</Link></li>
-                        <li><Link className="dropdown-item" to="/contact">Hotel Booking</Link></li>
+                        <li><a className="dropdown-item" href="/contact">Railway Ticket</a></li>
+                        <li><a className="dropdown-item" href="/contact">Flight Ticket</a></li>
+                        <li><a className="dropdown-item" href="/contact">About Visa</a></li>
+                        <li><a className="dropdown-item" href="/contact">Hotel Booking</a></li>
                     </ul>
                     </li>
                     <li className="nav-item"style={{paddingRight:"1rem"}}>
-                        <Link className="nav-link active" aria-current="page" to="/family">OUR FAMILY</Link>
+                        <a className="nav-a active" aria-current="page" href="/family">OUR FAMILY</a>
                     </li>
                     <li className="nav-item dropdown"style={{paddingRight:"1rem"}}>
-                        <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a className="nav-a dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         GALLERIES
                     </a>
                     <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -63,7 +63,7 @@ export default function Navbar() {
                     </ul>
                     </li>
                     <li className="nav-item"style={{paddingRight:"1rem"}}>
-                        <Link className="nav-link active" aria-current="page" to="/contact">CONTACT US</Link>
+                        <a className="nav-a active" aria-current="page" href="/contact">CONTACT US</a>
                     </li>
                 </ul>
                 </div>
