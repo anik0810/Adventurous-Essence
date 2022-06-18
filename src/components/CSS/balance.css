@@ -1,0 +1,46 @@
+.main{
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.sub-main{
+    text-align: justify;
+}
+
+input[type="text"] {
+	font: 15px/24px "Lato", Arial, sans-serif;
+	color: #333;
+	width: 100%;
+	box-sizing: border-box;
+	letter-spacing: 1px;
+}.sub-main input:focus{
+    /* border: 1px solid rebeccapurple; */
+}
+.card-body{
+    padding: 3rem;
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+}
+@media (min-width:600px) {
+    .card-body{
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+.details{
+    padding: 20px;
+    text-align: center;
+}
+.details label{
+    color: rgb(60, 157, 248);
+    font-weight: 500;
+    font-size: 20px;
+    font-family: "Merriweather",serif;
+    font-style: italic;
+}
+.view{
+    text-align: center;
+}

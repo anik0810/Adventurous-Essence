@@ -25,7 +25,7 @@ export default function AddBooking() {
             </div>
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Dates</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1" onChange={(event)=>{setDate(event.target.value)}} />
+                <input type="date" class="form-control" id="exampleFormControlInput1" onChange={(event)=>{setDate(event.target.value)}} />
             </div>
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">No. Of Days</label>

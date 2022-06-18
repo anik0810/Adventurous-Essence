@@ -1,42 +1,43 @@
-import React, { useState } from 'react'
+import React, { useState,useEffect} from 'react'
 import Axios from 'axios';
 export default function TourList() {
   const [tour,setTour]=useState([]);
-  const getTourList =()=>{
+  useEffect(()=>{
     Axios.get('http://localhost:3001/tour',{
     }).then((response)=>{
       setTour(response.data);
-      // console.log(response.data);
     });
-  };
-  let place;
-  tour.map((val,key)=>{
-    place=val.place;
-    console.log(place);
   });
   return (
     <>
-        <div className='container mt-3'>
-          <button onClick={getTourList}>GetData</button>
+        <div className='container mt-4'>
+          {/* <button onClick={getTourList}>GetData</button> */}
         <table class="table">
   <thead>
-    <tr>
-      <th scope="col">#</th>
+    <tr style={{color:"rgb(98 173 251)"}}>
       <th scope="col">Places</th>
       <th scope="col">Dates</th>
       <th scope="col">No. of Days</th>
-      <th scope="col">Fare</th>
+      <th scope="col">Fare per person</th>
+      <th scope="col">Bookings</th>
     </tr>
   </thead>
-  <tbody>
+
+  {
+    tour.map((val,key)=>{
+      return(
+        <tbody>
     <tr>
-      <th scope="row">1</th>
-      <td>{`${place}`}</td>
-      <td>12 sep</td>
-      <td>@twitter</td>
-      <td>10000</td>
+      <td>{val.place}</td>
+      <td>{val.dates}</td>
+      <td>{val.days}</td>
+      <td>{val.fare}</td>
+      <td><button type="button" class="btn btn-warning" aria-pressed="true">Book</button></td>
     </tr>
   </tbody>
+      )})
+  }
+  
 </table>
         </div>
     </>

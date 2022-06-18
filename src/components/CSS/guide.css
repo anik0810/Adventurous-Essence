@@ -1,5 +1,6 @@
 .guide{
     margin-top: 4rem;
+    margin-bottom: 3rem;
     display: grid;
     grid-template-columns: repeat(1,1fr);
     background-color: rgb(229, 252, 252);

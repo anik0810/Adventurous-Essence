@@ -1,0 +1,18 @@
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 1.4rem;
+}
+.name{
+    text-align: center;
+}
+.name h{
+    font-size: 1.6rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 550;
+    color: rgb(51, 162, 253);
+}
+.name span{
+    color: rgb(252, 85, 154);
+}

@@ -1,6 +1,6 @@
 import React from 'react';
 import './CSS/guide.css';
-// import {a} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import mal from './CSS/IMAGE/maldives.jpg';
 import him from './CSS/IMAGE/him.jpg';
 import souvik from './CSS/IMAGE/souvik.jpg';
@@ -25,7 +25,7 @@ export default function Guides() {
                 <p>Call one of our experts to know details ...</p>  
                 <div className='contact'>
                     <p1>+91 9903074062</p1>
-                    <a to="/contact"><button className='enquiery'>Make an Enquiery</button></a>
+                    <Link to="/contact"><button className='enquiery'>Make an Enquiery</button></Link>
                 </div>
             </div>
         </div>

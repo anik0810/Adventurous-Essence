@@ -6,37 +6,38 @@
     
   }
   
-  .topnav a {
+  .topnav a1 {
     float:right;
     color: black;
     text-align: center;
     padding: 15px 20px;
     font-size: 17px;
+    cursor: pointer;
   }
-  .topnav a:nth-child(1){
+  .topnav a1:nth-child(1){
       background-color: rgb(22, 65, 255);
       color: white;
   }
-  .topnav a:nth-child(5){
+  .topnav a1:nth-child(5){
       /* background-color: rgb(250, 41, 128); */
       font-size: 20px;
       font-family:'Times New Roman', Times, serif;
       letter-spacing: 2.5px;
   }
-  .topnav a span{
+  .topnav a1 span{
       font-weight: bolder;
   }
   @media (max-width:1300px) {
-      .topnav a{
+      .topnav a1{
           display: none;
       }
-      .topnav a:nth-child(5){
+      .topnav a1:nth-child(5){
           display: block;
       }
       .topnav{
           text-align: center;
       }
-      .topnav a{
+      .topnav a1{
           float: none;
       }
   }

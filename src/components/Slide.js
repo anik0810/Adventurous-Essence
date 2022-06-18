@@ -1,7 +1,7 @@
 import React from 'react';
 import cover1 from './CSS/IMAGE/sun.jpg';
 import cover from './CSS/IMAGE/slide3.jpg';
-import cover3 from './CSS/IMAGE/mountain.jpg';
+import cover3 from './CSS/IMAGE/budha.jpg';
 import cover2 from './CSS/IMAGE/slide1.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
@@ -33,7 +33,7 @@ export default function Slide() {
                     </div>
                     <div class="carousel-item" data-bs-interval="4000">
                         <img src={cover3} class="d-block w-100" alt="..." style={{height:"80vh",
-        objectPosition:"top",
+        objectPosition:"center",
         objectFit:"cover"}}/>
                         <div class="carousel-caption d-md-block" style={{top:"45%"}}>
                             <h5 style={capStyle}>Enjoy the Unseen Beauty Of the World...</h5>
